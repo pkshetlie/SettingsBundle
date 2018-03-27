@@ -1,0 +1,36 @@
+{
+  "name": "pkshetlie/settings-bundle",
+  "license": "GPL-3.0-or-later",
+  "description": "Easy way to get and set parameters for a symfony application",
+  "keywords": [
+    "parameter",
+    "settings",
+    "symfony",
+    "twig"
+  ],
+  "homepage": "https://github.com/pkshetlie/settings-bundle",
+  "require": {
+    "php": "^7.0",
+    "doctrine/doctrine-bundle": "^1.6",
+    "doctrine/orm": "^2.5",
+    "symfony/symfony": "3.4.*"
+  },
+  "authors": [
+    {
+      "name": "Pierrick POBELLE",
+      "email": "pierrick.pobelle@gmail.com",
+      "homepage": "http://pierrick.pobelle.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pkshetlie\\SettingsBundle\\": ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  }
+}
