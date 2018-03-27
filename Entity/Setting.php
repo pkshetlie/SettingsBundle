@@ -8,8 +8,8 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Emprunt
  *
- * @ORM\Table(name="parametre")
- * @ORM\Entity(repositoryClass="SettingsBundle\Repository\SettingRepository")
+ * @ORM\Table(name="setting")
+ * @ORM\Entity(repositoryClass="Pkshetlie\SettingsBundle\Repository\SettingRepository")
  */
 class Setting
 {
