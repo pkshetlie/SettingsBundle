@@ -1,6 +1,6 @@
 <?php
 
-namespace SettingsBundle;
+namespace Pkshetlie\SettingsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

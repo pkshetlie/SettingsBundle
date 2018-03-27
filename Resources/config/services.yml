@@ -1,7 +1,4 @@
 services:
-#    parametre.example:
-#        class: ParametreBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
-    parametre.service:
-        class: DalBundle\Services\ParametreService
+    pkshetlie.settings:
+        class: Pkshetlie\SettingsBundle\Services\SettingsService
         arguments: ["%doctrine.default_entity_manager%"]

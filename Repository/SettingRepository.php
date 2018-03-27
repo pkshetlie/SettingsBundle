@@ -1,6 +1,6 @@
 <?php
 
-namespace SettingsBundle\Repository;
+namespace Pkshetlie\SettingsBundle\Repository;
 
 /**
  * ParametreRepository

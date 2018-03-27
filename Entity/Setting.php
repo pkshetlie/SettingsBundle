@@ -1,6 +1,6 @@
 <?php
 
-namespace SettingsBundle\Entity;
+namespace Pkshetlie\SettingsBundle\Entity;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
