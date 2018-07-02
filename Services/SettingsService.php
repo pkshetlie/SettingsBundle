@@ -33,7 +33,10 @@ class SettingsService
         /** @var Setting $setting */
         $setting = $this->em->getRepository('SettingsBundle:Setting')->findOneBy(['name' => $name]);
         self::$_get[$name] = $setting != null ? $setting->getValue() : $default;
-
+        $data = @unserialize(self::$_get[$name]);
+        if (self::$_get[$name] === 'b:0;' || $data !== false) {
+            self::$_get[$name] = $data;
+        }
         return self::$_get[$name];
     }
 
@@ -50,6 +53,9 @@ class SettingsService
         if (null === $setting) {
             $setting = new Setting();
             $setting->setName($name);
+        }
+        if(is_array($value) || is_object($value)){
+            $value = serialize($value);
         }
         $setting->setValue($value);
         $this->em->persist($setting);
