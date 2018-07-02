@@ -31,7 +31,7 @@ class Setting
 
     /**
      * @var string
-     * @ORM\Column(name="description", type="string")
+     * @ORM\Column(name="description", type="string", nullable=true)
      */
     private $description;
 
