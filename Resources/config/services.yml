@@ -1,4 +1,4 @@
 services:
     pkshetlie.settings:
         class: Pkshetlie\SettingsBundle\Services\SettingsService
-        arguments: ["%doctrine.default_entity_manager%"]
+        arguments: ["@doctrine.orm.entity_manager"]

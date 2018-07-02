@@ -26,7 +26,7 @@ class SettingsService
      * @param mixed|null $default
      * @return mixed|null|string
      */
-    public function get(string $name, mixed $default = null)
+    public function get(string $name, $default = null)
     {
         if (isset(self::$_get[$name])) return self::$_get[$name];
 
@@ -40,8 +40,10 @@ class SettingsService
     /**
      * @param string $name
      * @param mixed $value
+     * @throws \Doctrine\ORM\ORMException
+     * @throws \Doctrine\ORM\OptimisticLockException
      */
-    public function set(string $name, mixed $value)
+    public function set(string $name, $value)
     {
         /** @var Setting $setting */
         $setting = $this->em->getRepository('SettingsBundle:Setting')->findOneBy(['name' => $name]);
