@@ -19,7 +19,7 @@ abstract class ControllerWithSettings extends Controller
      * @param mixed $default default value to return
      * @return mixed|null|string
      */
-    public function getSetting($name, $default)
+    public function getSetting($name, $default = null)
     {
         if(null === $this->setting_service){
             $this->setting_service = $this->get('pkshetlie.settings');
