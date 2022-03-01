@@ -10,10 +10,10 @@
   ],
   "homepage": "https://github.com/pkshetlie/settings-bundle",
   "require": {
-    "php": "^7.0",
-    "doctrine/doctrine-bundle": "^1.6",
-    "doctrine/orm": "^2.5",
-    "symfony/symfony": "4.3.*"
+    "php": ">=7.0",
+    "doctrine/doctrine-bundle": ">=1.6",
+    "doctrine/orm": ">=2.5",
+    "symfony/symfony": ">=3.4"
   },
   "authors": [
     {
